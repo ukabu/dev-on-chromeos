@@ -1,0 +1,26 @@
+#!/bin/bash
+
+apt-get update
+
+apt-get install -y \
+  apt-transport-https \
+  build-essential \
+  ca-certificates \
+  curl \
+  git \
+  gpg \
+  graphviz \
+  grc \
+  httpie \
+  jq \
+  libnss3-tools \
+  mycli \
+  openjdk-8-jdk \
+  pgadmin3 \
+  pgcli \
+  pwgen \
+  siege \
+  software-properties-common \
+  unzip \
+  wget \
+  zip

@@ -14,10 +14,6 @@ for SETUP_SCRIPT in ls $DIR/user/??-*; do
   $SETUP_SCRIPT
 done
 
-# useful aliases
-grep "^alias gw=" ~/.bashrc || echo "alias gw=./gradlew" >> ~/.bashrc
-grep "^alias mw=" ~/.bashrc || echo "alias mw=./mvnw" >> ~/.bashrc
-
 mkdir -p $HOME/projects
 
 echo "Logout and log back in to synchronize all the bits and bytes."

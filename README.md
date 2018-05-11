@@ -10,6 +10,7 @@ These scripts setup all the tools I need :
 - CloudFoundry CLI
 - Bash scripting (jq, httpie, dot)
 - VSCode for coding
+- python3, pip and pipenv
 - ...
 
 Known to work on:

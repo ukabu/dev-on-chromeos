@@ -8,6 +8,7 @@ apt-get install -y \
   ca-certificates \
   chromium \
   curl \
+  fonts-noto \
   gettext \
   git \
   gnupg \

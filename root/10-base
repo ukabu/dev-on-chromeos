@@ -18,6 +18,7 @@ apt-get install -y \
   jq \
   libnss3-tools \
   mycli \
+  nano \
   openjdk-8-jdk \
   pgadmin3 \
   pgcli \

@@ -1,0 +1,10 @@
+#!/bin/bash
+
+DIR="$( cd "$( dirname $(readlink -f "${BASH_SOURCE[0]}") )" && pwd )"
+EXTENSIONS="$DIR/../vscode-extensions.list"
+
+while read EXTENSION; do
+  code --install-extension $EXTENSION
+done <$EXTENSIONS
+
+git config --global core.editor "code -n --wait"

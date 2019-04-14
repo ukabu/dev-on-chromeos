@@ -1,0 +1,11 @@
+#!/bin/bash
+
+DIR="$( cd "$( dirname $(readlink -f "${BASH_SOURCE[0]}") )" && pwd )"
+USER_SETTINGS=$HOME/.config/Code/User/settings.json
+DEFAULTS="$DIR/../vscode-defaults.json"
+
+if [[ -e ${USER_SETTINGS} ]]; then
+  jq --argfile defaults $DEFAULTS '. *= $defaults' $USER_SETTINGS > $USER_SETTINGS.tmp && mv $USER_SETTINGS.tmp $USER_SETTINGS
+else
+  cp $DEFAULTS $USER_SETTINGS
+fi

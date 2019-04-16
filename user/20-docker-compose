@@ -1,0 +1,6 @@
+#!/bin/bash
+
+DOCKER_COMPOSE_BIN=$HOME/bin/docker-compose
+
+curl -L https://github.com/docker/compose/releases/latest/download/docker-compose-`uname -s`-`uname -m` -o $DOCKER_COMPOSE_BIN
+chmod +x $DOCKER_COMPOSE_BIN

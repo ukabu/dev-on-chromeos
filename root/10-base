@@ -17,6 +17,7 @@ apt-get install -y \
   httpie \
   jq \
   libnss3-tools \
+  lsb-release \
   mycli \
   nano \
   openjdk-8-jdk \

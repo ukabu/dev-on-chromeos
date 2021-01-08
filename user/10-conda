@@ -1,0 +1,5 @@
+#!/bin/bash
+SOURCE_CONDA='source /opt/conda/etc/profile.d/conda.sh'
+BASHRC="$HOME/.bashrc"
+
+grep -qF -- "$SOURCE_CONDA" "$BASHRC" || echo "$SOURCE_CONDA" >> "$BASHRC"

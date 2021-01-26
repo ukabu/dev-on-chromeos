@@ -1,5 +1,9 @@
 #!/bin/bash
-SOURCE_CONDA='source /opt/conda/etc/profile.d/conda.sh'
-BASHRC="$HOME/.bashrc"
+SOURCE_CONDA='source $HOME/miniconda3/bin/activate'
 
-grep -qF -- "$SOURCE_CONDA" "$BASHRC" || echo "$SOURCE_CONDA" >> "$BASHRC"
+wget -O /tmp/miniconda.sh https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+
+bash /tmp/miniconda.sh -b -f
+
+source $HOME/miniconda3/bin/activate
+conda init

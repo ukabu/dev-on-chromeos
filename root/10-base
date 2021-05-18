@@ -16,18 +16,32 @@ apt-get install -y \
   grc \
   httpie \
   jq \
+  libbz2-dev \
+  libffi-dev \
+  liblzma-dev \
+  libncursesw5-dev \
   libnss3-tools \
+  libreadline-dev \
+  libsqlite3-dev \
+  libssl-dev \
+  libxml2-dev \
+  libxmlsec1-dev \
+  llvm \
   lsb-release \
   mycli \
+  make \
   nano \
-  openjdk-8-jdk \
+  openjdk-11-jdk \
   pgadmin3 \
   pgcli \
   pwgen \
   siege \
   software-properties-common \
+  tk-dev \
   tmux \
   unzip \
   uuid-runtime \
   wget \
+  xz-utils \
+  zlib1g-dev \
   zip

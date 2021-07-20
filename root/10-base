@@ -3,6 +3,7 @@
 apt-get update
 
 apt-get install -y \
+  anacron \
   apt-transport-https \
   build-essential \
   ca-certificates \
@@ -32,8 +33,6 @@ apt-get install -y \
   make \
   nano \
   openjdk-11-jdk \
-  pgadmin3 \
-  pgcli \
   pwgen \
   siege \
   software-properties-common \

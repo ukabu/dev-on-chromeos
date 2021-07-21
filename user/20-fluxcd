@@ -1,5 +1,5 @@
 #!/bin/bash
-COMPLETION="flux completion bash"
+COMPLETION="~/bin/flux completion bash"
 
 mkdir -p ~/bin
 

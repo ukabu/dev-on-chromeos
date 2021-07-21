@@ -1,0 +1,8 @@
+#!/bin/bash
+COMPLETION="flux completion bash"
+
+mkdir -p ~/bin
+
+curl -s https://fluxcd.io/install.sh | bash -s - $HOME/bin
+
+grep -q "$COMPLETION" ~/.bashrc || echo ". <($COMPLETION)" >> ~/.bashrc

@@ -1,0 +1,10 @@
+#!/bin/bash
+COMPLETION="kubectl completion bash"
+
+mkdir -p ~/bin
+
+curl -o ~/bin/kubectl -L "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
+
+chmod +x ~/bin/kubectl
+
+grep -q "$COMPLETION" ~/.bashrc || echo ". <($COMPLETION)" >> ~/.bashrc

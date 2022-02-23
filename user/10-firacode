@@ -1,9 +1,7 @@
 #!/bin/bash
 mkdir -p ~/.local/share/fonts
 
-for type in Bold Light Medium Regular Retina; do
-    wget -O ~/.local/share/fonts/FiraCode-${type}.ttf \
-    "https://github.com/tonsky/FiraCode/blob/master/distr/ttf/FiraCode-${type}.ttf?raw=true";
-done
+http --follow https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/FiraCode.zip > /tmp/FiraCode.zip
+unzip -d ~/.local/share/fonts /tmp/FiraCode.zip "*.ttf"
 
 fc-cache -f

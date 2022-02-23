@@ -1,7 +1,0 @@
-#!/bin/bash
-
-[[ -d $HOME/.basher ]] && echo "basher already installed." && exit 0
-
-git clone https://github.com/basherpm/basher.git ~/.basher
-echo 'export PATH="$HOME/.basher/bin:$PATH"' >> ~/.bashrc
-echo 'eval "$(basher init -)"' >> ~/.bashrc  

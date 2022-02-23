@@ -1,0 +1,5 @@
+#!/bin/bash
+
+sh -c "$(curl -fsSL https://starship.rs/install.sh)" -- --bin-dir ~/bin --yes
+
+grep -q "starship init" ~/.bashrc || echo 'eval "$(starship init bash)"' >> ~/.bashrc

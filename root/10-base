@@ -9,6 +9,7 @@ apt-get install -y \
   ca-certificates \
   chromium \
   curl \
+  flatpak \
   fonts-noto \
   gettext \
   git \

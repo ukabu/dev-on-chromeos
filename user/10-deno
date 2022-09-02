@@ -1,0 +1,5 @@
+#!/bin/bash
+
+curl -fsSL https://deno.land/install.sh | sh
+
+[[ -e ~/bin/deno ]] || ln -s ~/.deno/bin/deno ~/bin/deno

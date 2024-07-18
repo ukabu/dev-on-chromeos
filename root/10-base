@@ -33,7 +33,6 @@ apt-get install -y \
   mycli \
   make \
   nano \
-  openjdk-11-jdk \
   pwgen \
   siege \
   software-properties-common \

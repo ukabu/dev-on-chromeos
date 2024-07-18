@@ -1,7 +1,5 @@
 #!/bin/bash
-if ! apt-key fingerprint 0EBFCD88 | grep -q 0EBFCD88; then
-  curl -fsSL https://download.docker.com/linux/debian/gpg | apt-key add -
-fi
+curl -fsSL https://download.docker.com/linux/debian/gpg | gpg --dearmor -o /etc/apt/keyrings/docker.gpg
 
 if [[ ! -e /etc/apt/sources.list.d/docker.list ]]
 then
